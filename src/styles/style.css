@@ -1,0 +1,161 @@
+@charset "UTF-8";
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  margin: 0 auto;
+  padding: 0px;
+  font-family: Tahoma, sans-serif;
+}
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.col-1 {
+  min-width: 8.33%;
+}
+.col-2 {
+  min-width: 16.66;
+}
+.col-3 {
+  min-width: 25%;
+}
+.col-4 {
+  min-width: 33.33%;
+}
+.col-5 {
+  min-width: 41.66%;
+}
+.col-6 {
+  min-width: 50%;
+}
+.col-7 {
+  min-width: 58.33%;
+}
+.col-8 {
+  min-width: 66.66%;
+}
+.col-9 {
+  min-width: 75%;
+}
+.col-10 {
+  min-width: 83.33%;
+}
+.col-11 {
+  min-width: 91.66%;
+}
+.col-12 {
+  min-width: 100%;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  height: 100vh;
+  overflow: auto;
+  margin: 0 auto;
+  position: relative;
+}
+.searchBar {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-color: gray;
+  padding: 1rem;
+  /* text-align: right; */
+}
+.input__box {
+  border: none;
+  height: 2.5rem;
+  width: 15rem;
+  padding: 0.2rem;
+  margin-right: 1rem;
+  border-radius: 3px;
+  font-size: 0.8rem;
+}
+button {
+  padding: 0.8rem 1.3rem;
+  color: white;
+  cursor: pointer;
+  background-color: blue;
+  border: none;
+  border-radius: 3px;
+}
+.cardContainer {
+  width: 33.33%;
+  padding: 0.5rem;
+}
+.cardWrapper {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  height: 20rem;
+  box-shadow: 5px 10px 8px #888888
+}
+.summery {
+  width: 70%;
+  padding-right: 0.3rem;
+}
+.movieWrapper {
+  margin-top: 3rem;
+}
+.card {
+  margin-top: 1rem;
+  padding: 0.6rem;
+  width: 30%;
+  border-radius: 5px;
+}
+.image__container {
+  width: 100%;
+  height: 10rem;
+  background-color: white;
+}
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tag {
+  color: blue;
+  text-transform: capitalize;
+  margin-right: 0.1rem;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  color: black;
+}
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+.search {
+  margin-left: auto;
+}
+
+@media screen and (max-width: 800px){
+  .cardContainer{
+    width: 100%;
+  }
+  .card{
+    width: 50%;
+  }
+  .summery{
+    width: 50%;
+  }
+}
