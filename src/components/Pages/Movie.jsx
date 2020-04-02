@@ -23,7 +23,7 @@ const Movie = (props) => {
   const displayMovies = () => {
     if (error) return <div>Error</div>;
 
-    if (loading) return <div>Loadin..</div>;
+    if (loading) return <div>Loading...</div>;
     if (result.length) {
       return result.map(data => <MovieCArd data={data} />);
     }

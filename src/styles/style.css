@@ -70,11 +70,11 @@ body {
 }
 .searchBar {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   height: auto;
   background-color: gray;
   padding: 1rem;
-  /* text-align: right; */
 }
 .input__box {
   border: none;
@@ -99,11 +99,12 @@ button {
 }
 .cardWrapper {
   width: 100%;
-  background-color: gray;
+  background-color: white;
   display: flex;
   flex-wrap: wrap;
   border-radius: 5px;
   height: 20rem;
+  box-shadow: 5px 10px 8px #888888;
 }
 .summery {
   width: 70%;
@@ -147,14 +148,30 @@ ul {
   margin-left: auto;
 }
 
-@media screen and (max-width: 800px){
-  .cardContainer{
+@media screen and (max-width: 600px) {
+  .cardContainer {
     width: 100%;
   }
-  .card{
+  .card {
     width: 50%;
   }
-  .summery{
+  .summery {
+    width: 50%;
+  }
+  .title {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  .search {
+    width: 100%;
+  }
+  .input__box {
+    margin-bottom: 0.5rem;
+  }
+}
+@media screen and (max-width: 768px)and(min-width 600px){
+.cardContainer {
     width: 50%;
   }
 }

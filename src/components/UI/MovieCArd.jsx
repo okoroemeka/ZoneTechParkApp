@@ -22,7 +22,7 @@ const MovieCard = ({
             {name}
           </li>
           <li>
-            <span className="tag">url:</span>
+            <span className="tag">season:</span>
             {season}
           </li>
           <li>
