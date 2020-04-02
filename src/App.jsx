@@ -1,4 +1,9 @@
 import React from 'react';
+import Movie from './components/Pages/Movie';
 
-const App = () => <h1>Hello Friend</h1>;
+const App = () => (
+  <div className="container">
+    <Movie />
+  </div>
+);
 export default App;
