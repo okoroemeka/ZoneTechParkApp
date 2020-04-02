@@ -11,7 +11,9 @@ const Movie = (props) => {
     setError(null);
     setLoading(true);
     fetch(
-      `https://api.tvmaze.com/singlesearch/shows?q=${searchText}&embed=episodes`,
+      `https://api.tvmaze.com/singlesearch/shows?q=${
+        searchText.trim().length ? searchText.trim() : 'merlin'
+      }&embed=episodes`,
     )
       .then(searchResult => searchResult.json())
       .then(data => setResult(data._embedded.episodes))

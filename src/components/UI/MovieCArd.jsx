@@ -9,7 +9,7 @@ const MovieCard = ({
     summary
   }
 }) => (
-  <div className="cardContainer">
+  <div className="cardContainer" key={number}>
     <div className="cardWrapper">
       <div className="card">
         <div className="image__container">
